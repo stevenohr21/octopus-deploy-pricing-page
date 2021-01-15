@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Installation
 
-1. Clone the project from Github.
+1. Fork the project from Github.
 2. In the command line, <code>cd YOUR PROJECT DIRECTORY</code>.
 3. Run <code>npm install</code> to install the dependencies.
 4. Run <code>npm start</code> to run the application.
