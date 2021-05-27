@@ -1,9 +1,41 @@
-/* import {NouisliderProps} from "nouislider-react";
+export interface ISwitchProps {
+  checked: boolean | undefined;
+  value: string;
+}
 
-declare module "nouislider-react" {
-    interface NouisliderProps {
-        // add properties missing from types:
-        // https://stackoverflow.com/a/53098695
-        accessibility?: boolean,
-    }
-} */
+export interface IStateProps {
+  toggleOn: ISwitchProps;
+  setToggleOn: function;
+}
+
+export interface ITargetValue {
+  value: number | number[];
+  type: string;
+}
+
+export interface ISliderProps {
+  label: string;
+  valueType: ITargetValue;
+  setValueType: function;
+  maxValue: number;
+  style?: CSSProperties | null;
+}
+
+export interface IPricingProps {
+  targets: number | number[];
+  minutes?: number | number[];
+  billing?: string;
+  isServer?: boolean;
+  checked?: boolean;
+  setChecked?: function;
+}
+
+export interface IPriceHeaderProps {
+  iconName: string;
+  iconColor: any;
+  isPopular: boolean;
+}
+
+export interface IOffersProps {
+  offers: string[];
+}
